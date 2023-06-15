@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Update Contact</title>
+  </head>
+  <body>
+    <h3>Update your contact Here</h3>
+    <form action="/update/{{contact.id}}" method="POST">
+      <input
+        type="text"
+        placeholder="Write your full name"
+        name="fullname"
+        value="{{contact.fullname}}"
+      />
+      <input
+        type="text"
+        placeholder="Write your email"
+        name="email"
+        value="{{contact.email}}"
+      />
+      <input
+        type="text"
+        placeholder="Write your phone"
+        name="phone"
+        value="{{contact.phone}}"
+      />
+      <button>Save</button>
+    </form>
+  </body>
+</html>
